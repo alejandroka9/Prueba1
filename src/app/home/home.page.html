@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true" class="ion-text-center">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <div class="gif-container">
+    <img src="assets/2d17278a87345a4e4295dfadf7d6205c_w200.gif" alt="Animación GIF" />
+  </div>
+
+  <div id="container" class="center-content">
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="text" [(ngModel)]="username" placeholder="Ingrese su usuario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="password" placeholder="Ingrese su contraseña"></ion-input>
+    </ion-item>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="welcome-container">
+    <h2 class="animated-text">Bienvenidos</h2>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="button-container">
+      <ion-button class="boton-personalizado" color="primary" expand="full" (click)="iniciarSesion()">Iniciar Sesión</ion-button>
+      <ion-button class="boton-personalizado" color="success" expand="full" routerLink="/registro">Registrar</ion-button>
+      <ion-button class="boton-personalizado" color="secondary" expand="full" routerLink="/recuperar">Recuperar contraseña</ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

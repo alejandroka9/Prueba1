@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Nueva Página
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      Datos Escaneados
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ scannedData | json }}</p>
+    </ion-card-content>
+  </ion-card>
+
+ 
+  <div class="gif-container">
+    <img src="/assets/61897fbab5cf4e726f8743ce8969faa7.gif" alt="Animación GIF" class="gif">
+  </div>
+
+  
+  <ion-button routerLink="/home" expand="full" class="boton-volver">Volver </ion-button>
+</ion-content>
